@@ -6,7 +6,7 @@ First, run the development server:
 
 ```clone this repository
 git clone https://github.com/LutsiukAndrey/store-front.git
-cd nextjs-ecommerce-dashboard
+
 
 # or
 yarn dev
