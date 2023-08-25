@@ -13,7 +13,7 @@ interface FilterProps {
   valueKey: string;
 }
 
-const Filter = ({ data, name, valueKey }) => {
+const Filter: React.FC<FilterProps> = ({ data, name, valueKey }) => {
   const searchParams = useSearchParams();
   const router = useRouter();
 
