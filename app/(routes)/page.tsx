@@ -1,6 +1,6 @@
 import getBillboard from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";
-import Billboard from "@/components/Billboard";
+import Billboard from "@/components/ui/Billboard";
 import ProductList from "@/components/ProductList";
 import Container from "@/components/ui/Container";
 import React from "react";

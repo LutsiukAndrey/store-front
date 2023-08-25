@@ -2,12 +2,14 @@ import getCategory from "@/actions/get-category";
 import getColors from "@/actions/get-colors";
 import getProducts from "@/actions/get-products";
 import getSizes from "@/actions/get-sizes";
-import Billboard from "@/components/Billboard";
+import Billboard from "@/components/ui/Billboard";
 import Container from "@/components/ui/Container";
 import Filter from "./components/Filter";
 import NoResults from "@/components/ui/NoResults";
 import ProductCard from "@/components/ui/ProductCard";
 import MobileFilters from "./components/MobileFilters";
+
+export const revalidate = 0;
 
 interface CategoryProps {
   params: {
@@ -24,7 +26,7 @@ const CategoryPage: React.FC<CategoryProps> = async ({
   searchParams,
 }) => {
   const products = await getProducts({
-    categoryId: params.categoyId,
+    categoryId: params.categoryId,
     colorId: searchParams.colorId,
     sizeId: searchParams.sizeId,
   });

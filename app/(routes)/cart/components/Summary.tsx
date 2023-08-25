@@ -5,7 +5,7 @@ import Currency from "@/components/ui/Currency";
 import useCart from "@/hooks/useCart";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 import { toast } from "react-hot-toast";
 
 const Summary = () => {
@@ -48,7 +48,11 @@ const Summary = () => {
           <Currency value={totalPrice} />
         </div>
       </div>
-      <Button onClick={onChackout} className=" w-full mt-6">
+      <Button
+        disabled={!items.length}
+        onClick={onChackout}
+        className=" w-full mt-6"
+      >
         Checkout
       </Button>
     </div>
