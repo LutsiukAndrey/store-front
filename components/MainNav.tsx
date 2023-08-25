@@ -20,6 +20,15 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
 
   return (
     <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
+      <Link
+        href={`/category/newest`}
+        className={cn(
+          "text-sm font-medium transition-colors hover:text-black",
+          pathname === `/category/newest` ? "text-black" : "text-neutral-500"
+        )}
+      >
+        Newest
+      </Link>
       {routes.map((route) => (
         <Link
           key={route.href}
