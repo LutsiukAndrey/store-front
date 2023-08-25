@@ -1,9 +1,9 @@
-# Full Stack Store : Next.js 13 React, Tailwind, Prisma, MySQL, Clerc, Stripe
+## Full Stack Store : Next.js 13 React, Tailwind, Prisma, MySQL, Clerc, Stripe
 
 
-## Getting Started
+### Getting Started
 
-## MAKE SURE YOU HAVE [ADMIN](https://github.com/LutsiukAndrey/store-admin) SETUP FIRST!
+# MAKE SURE YOU HAVE [ADMIN](https://github.com/LutsiukAndrey/store-admin) SETUP FIRST!
 
 
 1.Clone this repository:
